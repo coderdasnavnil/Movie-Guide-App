@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navnil's Movie Guide App</title>
+    <link rel="stylesheet" href="./movieGuideApp.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Search ARea -->
+        <div class="search-container">
+            <input type="text" id="userInput" placeholder="Enter movie/series name...">
+            <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <!-- Message part -->
+         <h3 class="msg hidden">Please Enter a movie-name</h3>
+
+         <!-- Result part -->
+          <div class="result hidden">
+            <!-- Poster + Title + Critic-rating +  -->
+            <div class="movieDetailsContainer">
+                <img src="" id="moviePoster">
+                <div class="movieInfo">
+                    <h2 id="movieTitle"></h2>
+                    <!-- Star + IMDB Rating -->
+                    <div class="criticRating">
+                        <img src="./Img/star-icon.png" alt="star-img">
+                        <h4 id="movieIMDBRating"></h4>
+                    </div>
+                    <!-- Movie Extra Info = Viewing-age + Year + Runtime -->
+                     <div class="movieExtraInfoContainer">
+                        <span id="movieViewingAge"></span>
+                        <span id="movieYear"></span>
+                        <span id="movieRuntime"></span>
+                     </div>
+                     <!-- Movie Genres -->
+                     <div class="movieGenreContainer">
+
+                     </div>
+
+                </div>
+            </div>
+            <div class="movie-description">
+                <!-- Movie plot -->
+                <h3 >Plot:</h3>
+                <p id="moviePlot"></p>
+                <!-- Movie Cast -->
+                <h3 >Cast:</h3>
+                <p id="movieCast"></p>
+            </div>
+
+          </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/ee13397da7.js" crossorigin="anonymous"></script>
+    <script src="./NavnilKey.js"></script>
+    <script src="./movieGuideApp.js"></script>
+</body>
+</html>

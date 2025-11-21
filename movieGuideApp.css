@@ -1,0 +1,172 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:"Poppins", san-serif;
+}
+
+body{
+    height:100vh;
+    background: linear-gradient(to bottom, rgb(231, 156, 16) 50%, rgb(16, 16, 16) 50%);
+}
+
+.container{
+    width:700px;
+    background: #313030;
+    /* border:2px solid red; */
+    /* height:300px; */
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    border-radius: 1rem;
+    padding:20px 30px;
+    color:#fff;
+    /* text-align: center; */
+}
+.container .msg{
+    font-weight:500;
+    font-size:30px;
+    width:100%;
+    text-align:center;
+}
+
+.search-container{
+    width:100%;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin:30px auto;
+}
+.search-container #userInput, .search-container #searchBtn{
+    height:2.8rem;
+    border-radius: 0.5rem;
+    border:none;
+    outline:none;
+}
+
+.search-container #searchBtn{
+    text-align:center;
+    align-self:center;
+    font-size:20px;
+    background-color: rgb(231, 156, 16);
+    font-weight:600;
+    cursor:pointer;
+}
+
+.search-container #userInput{
+    font-size:20px;
+    padding:22px;
+    font-weight:400;
+    color:#fff;
+    border:solid 2px #fff;
+    background: transparent;
+}
+.search-container #userInput::placeholder{
+    font-weight:600;
+    color:#b9b2b2;
+}
+
+.container .result{
+    /* border:solid red 2px; */
+    color:#fff;
+}
+
+.container .result .criticRating img{
+    width:26px;
+}
+
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    display:block;
+}
+
+
+
+/* MOVIE STYLING */
+.movieDetailsContainer{
+    display:grid;
+    grid-template-columns: 4fr 8fr;
+    gap:1.2em;
+    padding: 15px 35px;
+}
+.movieDetailsContainer #moviePoster{
+    width:12em;
+}
+
+.movieDetailsContainer .movieInfo #movieTitle{
+    text-align:center;
+    letter-spacing: 1.8px;
+    font-size: 37px;
+    font-weight: 600;
+}
+
+/* Crtic Rating */
+.movieDetailsContainer .criticRating{
+    margin-top:8px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap:0.7em;
+    font-size:22px;
+}
+
+/* Movie Extra info */
+.movieDetailsContainer .movieExtraInfoContainer{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items:center;
+    text-align:center;
+    justify-content:center;
+    /* border:solid red 2px; */
+    padding:20px 20px 10px;
+    margin-top:20px;
+    font-size:18px;
+    font-weight:600;
+}
+
+/* Movie Genre Styling */
+.genreBoxStyle{
+    display:flex;
+    flex-wrap: wrap;
+    gap:12px;
+    justify-content:center;
+    align-items:center;
+    margin-top:17px;
+}
+.genreStyle{
+    padding:12px 23px;
+    border:solid #fff 2px;
+    font-size:19px;
+    font-weight:300;
+}
+
+/* Movie Description */
+.movie-description{
+    /* border: solid 2px #fff; */
+    padding: 10px 30px;
+    margin-top: 10px;
+}
+.movie-description h3{
+    font-size:22px;
+    font-weight:800;
+    letter-spacing: 2.5px;
+}
+.movie-description p{
+    padding: 8px 0;
+    letter-spacing: 0.4px;
+    font-size: 17px;
+}
+
+.movie-description p:first-of-type{
+    margin-bottom: 10px
+}
+.movie-description p:nth-child(2){
+    margin-bottom: 8px
+}
